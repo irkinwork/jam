@@ -1,4 +1,4 @@
-if (['development'].includes(process.env.NODE_ENV)) {
+if (['development', 'production'].includes(process.env.NODE_ENV)) {
   require("dotenv").config();
 }
 module.exports = {
