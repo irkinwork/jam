@@ -16,7 +16,7 @@ const Article = ({
 }) => (
   <div>
     <h2>{title}</h2>
-    <img src={url} alt={title}/>
+    {url && <img src={url} alt={title}/>}
     <p>
       {text}
     </p>
