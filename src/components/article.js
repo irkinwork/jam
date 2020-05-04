@@ -6,22 +6,21 @@ const Article = ({
     text: {
       text
     },
-    banner: {
-      file: {
-        url
-      }
-    },
+    banner,
     publishedAt
   }
-}) => (
-  <div>
-    <h2>{title}</h2>
-    {url && <img src={url} alt={title}/>}
-    <p>
-      {text}
-    </p>
-    <h5>{publishedAt}</h5>
-  </div>
-)
+}) => {
+  const url = banner?.file;
+  return (
+    <div>
+      <h2>{title}</h2>
+      {url && <img src={url} alt={title}/>}
+      <p>
+        {text}
+      </p>
+      <h5>{publishedAt}</h5>
+    </div>
+  )
+}
 
 export default Article
