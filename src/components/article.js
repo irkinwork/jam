@@ -10,7 +10,7 @@ const Article = ({
     publishedAt
   }
 }) => {
-  const url = banner?.file;
+  const url = banner?.file?.url;
   return (
     <div>
       <h2>{title}</h2>
